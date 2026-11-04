@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>News Sfom, articolo</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="img/logo-sfom.svg" type="image/svg+xml">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#ffffff}
+img{max-width:100%}
+a{color:inherit;text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:4px}
+details>summary::-webkit-details-marker{display:none}
+details>summary .sign::before{content:"+"}
+details[open]>summary .sign::before{content:"\2212"}
+body.menu-open{overflow:hidden}
+:focus-visible{outline:3px solid #B79BFF;outline-offset:2px}
+</style>
+</head>
+<body>
+<div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #16141A; background: #ffffff; -webkit-font-smoothing: antialiased; width: 100%;">
+
+<!-- HEADER -->
+<div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #16141A; -webkit-font-smoothing: antialiased;">
+
+<!-- BARRA SUPERIORE -->
+<header style="background: #ffffff; border-bottom: 1px solid #16141A;">
+<div style="max-width: 1440px; margin: 0 auto; padding: 16px clamp(16px, 4vw, 56px); display: flex; flex-wrap: wrap; align-items: center; gap: 16px clamp(16px, 3vw, 40px);">
+<a href="index.html" aria-label="Sfom, homepage" style="display: block; line-height: 0; flex: 0 0 auto;"><img src="img/logo-sfom.svg" alt="Sfom" style="height: 56px; width: auto; display: block;"></a>
+
+<form role="search" action="https://fondazionemusicalevda.it/" method="get" style="flex: 999 1 280px; min-width: 0; order: 3; display: flex; align-items: center; gap: 12px; height: 52px; padding: 0 8px 0 18px; border: 1px solid #16141A; box-sizing: border-box; background: #ffffff;">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16141A" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M15.5 15.5 21 21"></path></svg>
+<input type="search" name="s" aria-label="Cerca nel sito" placeholder="Cerca corsi, news, eventi…" style="flex: 1 1 auto; min-width: 0; height: 100%; border: 0; outline-offset: 2px; background: transparent; font-family: inherit; font-size: 17px; color: #16141A;">
+<button type="submit" style="flex: 0 0 auto; min-height: 36px; padding: 0 14px; border: 0; background: #16141A; color: #ffffff; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer;">Cerca</button>
+</form>
+
+<div style="flex: 0 0 auto; order: 4; display: flex; align-items: center; gap: 4px; margin-left: auto;">
+<a href="https://www.facebook.com/sfomvda" aria-label="Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M13.5 22v-8h2.5l.5-3h-3V9.3c0-.9.4-1.5 1.6-1.5h1.5V5.2c-.3 0-1.2-.2-2.3-.2-2.3 0-3.8 1.4-3.8 3.9V11H8v3h2.5v8"></path></svg>
+</a>
+<a href="https://www.instagram.com/sfom.vda/" aria-label="Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r="0.6" fill="#16141A"></circle></svg>
+</a>
+<button type="button" id="menu-open" aria-label="Apri il menù" aria-expanded="false" aria-controls="menu" style="display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; width: 56px; height: 52px; margin-left: 8px; border: 0; background: #16141A; cursor: pointer;">
+<span aria-hidden="true" style="display: block; width: 26px; height: 3px; background: #ffffff;"></span>
+<span aria-hidden="true" style="display: block; width: 26px; height: 3px; background: #ffffff;"></span>
+<span aria-hidden="true" style="display: block; width: 26px; height: 3px; background: #ffffff;"></span>
+</button>
+</div>
+</div>
+</header>
+
+<div id="menu" hidden role="dialog" aria-modal="true" aria-label="Menù principale" style="position: fixed; inset: 0; z-index: 1000; background: #16141A; color: #ffffff; overflow-y: auto;">
+<div style="max-width: 1440px; margin: 0 auto; padding: 16px clamp(16px, 4vw, 56px) 56px; box-sizing: border-box; min-height: 100%; display: flex; flex-direction: column;">
+
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 56px;">
+<a href="index.html" aria-label="Sfom, homepage" style="display: block; line-height: 0;"><img src="img/logo-sfom-white.svg" alt="Sfom" style="height: 56px; width: auto; display: block;"></a>
+<button type="button" id="menu-close" aria-label="Chiudi il menù" style="display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 4px 0 16px; border: 0; background: transparent; color: #ffffff; font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer;">
+Chiudi
+<svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"></path></svg>
+</button>
+</div>
+
+<div style="margin-top: clamp(40px, 6vw, 88px); display: flex; flex-wrap: wrap; gap: 56px clamp(40px, 6vw, 112px); align-items: flex-start; flex: 1 0 auto;">
+
+<!-- colonna sinistra -->
+<div style="flex: 1 1 300px; max-width: 420px; min-width: 0; display: flex; flex-direction: column; gap: 40px;">
+<div>
+<p style="margin: 0 0 20px; font-size: clamp(36px, 4vw, 56px); font-weight: 700; letter-spacing: -0.05em; line-height: 0.95;">Suonare<br>per credere<span style="color: #B79BFF;">.</span></p>
+<a href="https://fondazionemusicalevda.it/iscrizioni" style="display: inline-flex; align-items: center; gap: 14px; min-height: 56px; padding: 0 24px; background: #B79BFF; color: #16141A; font-size: 17px; font-weight: 700;">Iscrizioni 2026/27 <span aria-hidden="true">→</span></a>
+</div>
+<div style="font-size: 15px; line-height: 1.6; color: #cfcad8;">
+<div style="color: #ffffff; font-weight: 700; margin-bottom: 6px;">Segreteria</div>
+Via San Giocondo 8, 11100 Aosta<br>
+<a href="tel:+39016543995">0165 43995</a> · <a href="tel:+39016541450">0165 41450</a><br>
+<a href="mailto:segreteria.didattica@fondazionemusicalevda.it">segreteria.didattica@fondazionemusicalevda.it</a>
+</div>
+<div style="display: flex; gap: 4px; margin-left: -10px;">
+<a href="mailto:segreteria.didattica@fondazionemusicalevda.it" aria-label="Email" style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px;">
+<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"></rect><path d="M3.5 6l8.5 7 8.5-7"></path></svg>
+</a>
+<a href="https://www.facebook.com/sfomvda" aria-label="Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px;">
+<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M13.5 22v-8h2.5l.5-3h-3V9.3c0-.9.4-1.5 1.6-1.5h1.5V5.2c-.3 0-1.2-.2-2.3-.2-2.3 0-3.8 1.4-3.8 3.9V11H8v3h2.5v8"></path></svg>
+</a>
+<a href="https://www.instagram.com/sfom.vda/" aria-label="Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px;">
+<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r="0.6" fill="#ffffff"></circle></svg>
+</a>
+</div>
+</div>
+
+<!-- voci di menù -->
+<nav aria-label="Menù principale" style="flex: 999 1 560px; min-width: 0;">
+<ol style="list-style: none; margin: 0; padding: 0; border-top: 1px solid #444048; display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); column-gap: 48px; align-items: start;">
+<li style="border-bottom: 1px solid #333038;"><a href="https://fondazionemusicalevda.it/iscrizioni" style="display: flex; align-items: baseline; gap: 16px; padding: 14px 0; min-height: 44px; box-sizing: border-box;"><span style="flex: 0 0 24px; font-size: 13px; color: #9a94a6;">01</span><span style="flex: 1 1 auto; font-size: clamp(24px, 2.4vw, 34px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.1;">Nuove iscrizioni</span></a></li>
+<li style="border-bottom: 1px solid #333038;"><a href="#" style="display: flex; align-items: baseline; gap: 16px; padding: 14px 0; min-height: 44px; box-sizing: border-box;"><span style="flex: 0 0 24px; font-size: 13px; color: #9a94a6;">02</span><span style="flex: 1 1 auto; font-size: clamp(24px, 2.4vw, 34px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.1;">Rinnovi</span></a></li>
+<li style="border-bottom: 1px solid #333038;"><a href="index.html#news" style="display: flex; align-items: baseline; gap: 16px; padding: 14px 0; min-height: 44px; box-sizing: border-box;"><span style="flex: 0 0 24px; font-size: 13px; color: #9a94a6;">03</span><span style="flex: 1 1 auto; font-size: clamp(24px, 2.4vw, 34px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.1;">News</span></a></li>
+<li style="border-bottom: 1px solid #333038;"><details class="menu-group"><summary style="display: flex; align-items: baseline; gap: 16px; padding: 14px 0; min-height: 44px; cursor: pointer; list-style: none;"><span style="flex: 0 0 24px; font-size: 13px; color: #9a94a6;">04</span><span style="flex: 1 1 auto; font-size: clamp(24px, 2.4vw, 34px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.1;">School</span><span aria-hidden="true" class="sign" style="flex: 0 0 auto; font-size: 28px; line-height: 1; color: #B79BFF;"></span></summary><ul style="list-style: none; margin: 0; padding: 0 0 16px 40px; display: flex; flex-direction: column; gap: 4px;"><li><a href="https://fondazionemusicalevda.it/corsi/" style="display: inline-flex; align-items: center; min-height: 40px; font-size: 19px; color: #DCCBFA;">Tutti i corsi</a></li><li><a href="#" style="display: inline-flex; align-items: center; min-height: 40px; font-size: 19px; color: #DCCBFA;">Coro Sfom</a></li><li><a href="#" style="display: inline-flex; align-items: center; min-height: 40px; font-size: 19px; color: #DCCBFA;">Metodo Suzuki</a></li><li><a href="https://fondazionemusicalevda.it/news/calendario-scolastico-2026-2027/" style="display: inline-flex; align-items: center; min-height: 40px; font-size: 19px; color: #DCCBFA;">Calendario scolastico</a></li></ul></details></li>
+<li style="border-bottom: 1px solid #333038;"><a href="#" style="display: flex; align-items: baseline; gap: 16px; padding: 14px 0; min-height: 44px; box-sizing: border-box;"><span style="flex: 0 0 24px; font-size: 13px; color: #9a94a6;">05</span><span style="flex: 1 1 auto; font-size: clamp(24px, 2.4vw, 34px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.1;">Prenota aule</span></a></li>
+<li style="border-bottom: 1px solid #333038;"><a href="#" style="display: flex; align-items: baseline; gap: 16px; padding: 14px 0; min-height: 44px; box-sizing: border-box;"><span style="flex: 0 0 24px; font-size: 13px; color: #9a94a6;">06</span><span style="flex: 1 1 auto; font-size: clamp(24px, 2.4vw, 34px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.1;">Prenotazione eventi</span></a></li>
+<li style="border-bottom: 1px solid #333038;"><a href="https://fondazionemusicalevda.it/academy/" style="display: flex; align-items: baseline; gap: 16px; padding: 14px 0; min-height: 44px; box-sizing: border-box;"><span style="flex: 0 0 24px; font-size: 13px; color: #9a94a6;">07</span><span style="flex: 1 1 auto; font-size: clamp(24px, 2.4vw, 34px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.1;">Academy</span></a></li>
+<li style="border-bottom: 1px solid #333038;"><details class="menu-group"><summary style="display: flex; align-items: baseline; gap: 16px; padding: 14px 0; min-height: 44px; cursor: pointer; list-style: none;"><span style="flex: 0 0 24px; font-size: 13px; color: #9a94a6;">08</span><span style="flex: 1 1 auto; font-size: clamp(24px, 2.4vw, 34px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.1;">Infanzia</span><span aria-hidden="true" class="sign" style="flex: 0 0 auto; font-size: 28px; line-height: 1; color: #B79BFF;"></span></summary><ul style="list-style: none; margin: 0; padding: 0 0 16px 40px; display: flex; flex-direction: column; gap: 4px;"><li><a href="#" style="display: inline-flex; align-items: center; min-height: 40px; font-size: 19px; color: #DCCBFA;">[Sottovoce Infanzia 1]</a></li><li><a href="#" style="display: inline-flex; align-items: center; min-height: 40px; font-size: 19px; color: #DCCBFA;">[Sottovoce Infanzia 2]</a></li></ul></details></li>
+<li style="border-bottom: 1px solid #333038;"><a href="#" style="display: flex; align-items: baseline; gap: 16px; padding: 14px 0; min-height: 44px; box-sizing: border-box;"><span style="flex: 0 0 24px; font-size: 13px; color: #9a94a6;">09</span><span style="flex: 1 1 auto; font-size: clamp(24px, 2.4vw, 34px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.1;">Progetti per persone con disabilità</span></a></li>
+<li style="border-bottom: 1px solid #333038;"><a href="#" style="display: flex; align-items: baseline; gap: 16px; padding: 14px 0; min-height: 44px; box-sizing: border-box;"><span style="flex: 0 0 24px; font-size: 13px; color: #9a94a6;">10</span><span style="flex: 1 1 auto; font-size: clamp(24px, 2.4vw, 34px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.1;">Certificazione London Trinity College</span></a></li>
+<li style="border-bottom: 1px solid #333038;"><a href="https://fondazionemusicalevda.it/live-eventi/" style="display: flex; align-items: baseline; gap: 16px; padding: 14px 0; min-height: 44px; box-sizing: border-box;"><span style="flex: 0 0 24px; font-size: 13px; color: #9a94a6;">11</span><span style="flex: 1 1 auto; font-size: clamp(24px, 2.4vw, 34px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.1;">Live Eventi</span></a></li>
+<li style="border-bottom: 1px solid #333038;"><a href="trasparenza.html" style="display: flex; align-items: baseline; gap: 16px; padding: 14px 0; min-height: 44px; box-sizing: border-box;"><span style="flex: 0 0 24px; font-size: 13px; color: #9a94a6;">12</span><span style="flex: 1 1 auto; font-size: clamp(24px, 2.4vw, 34px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.1;">Amministrazione trasparente</span></a></li>
+<li style="border-bottom: 1px solid #333038;"><details class="menu-group"><summary style="display: flex; align-items: baseline; gap: 16px; padding: 14px 0; min-height: 44px; cursor: pointer; list-style: none;"><span style="flex: 0 0 24px; font-size: 13px; color: #9a94a6;">13</span><span style="flex: 1 1 auto; font-size: clamp(24px, 2.4vw, 34px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.1;">Fondazione</span><span aria-hidden="true" class="sign" style="flex: 0 0 auto; font-size: 28px; line-height: 1; color: #B79BFF;"></span></summary><ul style="list-style: none; margin: 0; padding: 0 0 16px 40px; display: flex; flex-direction: column; gap: 4px;"><li><a href="#" style="display: inline-flex; align-items: center; min-height: 40px; font-size: 19px; color: #DCCBFA;">[Sottovoce Fondazione 1]</a></li><li><a href="#" style="display: inline-flex; align-items: center; min-height: 40px; font-size: 19px; color: #DCCBFA;">[Sottovoce Fondazione 2]</a></li></ul></details></li>
+<li style="border-bottom: 1px solid #333038;"><a href="#" style="display: flex; align-items: baseline; gap: 16px; padding: 14px 0; min-height: 44px; box-sizing: border-box;"><span style="flex: 0 0 24px; font-size: 13px; color: #9a94a6;">14</span><span style="flex: 1 1 auto; font-size: clamp(24px, 2.4vw, 34px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.1;">Registro elettronico</span></a></li>
+
+</ol>
+</nav>
+</div>
+
+<div style="margin-top: 64px; padding-top: 20px; border-top: 1px solid #444048; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; color: #9a94a6;">
+<span>Fondazione Maria Ida Viglino per la cultura musicale</span>
+<img src="img/logo-sfom-white.svg" alt="" style="height: 28px; width: auto; opacity: 0.4;">
+</div>
+</div>
+</div>
+
+
+<!-- TESTATA ARTICOLO (giallo news) -->
+<section style="background: #FFE14D;">
+<div style="max-width: 1440px; margin: 0 auto; padding: clamp(32px, 5vw, 64px) clamp(16px, 4vw, 56px) clamp(40px, 5vw, 72px);">
+<nav aria-label="Percorso" style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 15px; margin-bottom: clamp(40px, 6vw, 72px);">
+<a href="index.html">Home</a>
+<span aria-hidden="true">/</span>
+<a href="index.html#news" style="font-weight: 700;">News</a>
+</nav>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; font-size: 15px; margin-bottom: 28px;">
+<a href="index.html#news" style="display: inline-flex; align-items: center; min-height: 32px; padding: 0 12px; background: #16141A; color: #FFE14D; font-weight: 700;">Laboratori</a>
+<time datetime="2026-11-03">3 novembre 2026</time>
+</div>
+<h1 style="margin: 0; max-width: 1180px; font-size: clamp(48px, 7vw, 112px); line-height: 0.92; font-weight: 700; letter-spacing: -0.05em;">Laboratorio Fucina Sonora a Pont-Saint-Martin, anno scolastico 2026/27</h1>
+<p style="margin: clamp(28px, 3.5vw, 48px) 0 0; max-width: 780px; font-size: clamp(21px, 2.2vw, 28px); line-height: 1.3; letter-spacing: -0.01em;">Canto corale e musica d'insieme per giovani musicisti: le iscrizioni sono aperte fino al 15 dicembre 2026.</p>
+</div>
+</section>
+
+<!-- IMMAGINE IN EVIDENZA -->
+<figure style="margin: 0; background: #0d0c10;">
+<img src="img/n-lettura.jpg" alt="Una giovane violinista legge lo spartito durante un concerto Sfom" style="display: block; width: 100%; height: clamp(300px, 46vw, 640px); object-fit: cover; object-position: center 35%;">
+</figure>
+
+<!-- CORPO -->
+<section style="max-width: 1440px; margin: 0 auto; padding: clamp(56px, 7vw, 104px) clamp(16px, 4vw, 56px);">
+<div style="display: flex; flex-wrap: wrap; gap: 48px clamp(40px, 6vw, 96px); align-items: flex-start;">
+
+<aside aria-label="Dettagli articolo" style="flex: 1 1 220px; max-width: 280px; min-width: 0; display: flex; flex-direction: column; gap: 28px; font-size: 15px; line-height: 1.5; border-top: 2px solid #16141A; padding-top: 20px;">
+<div>
+<div style="font-weight: 700; margin-bottom: 4px;">Pubblicato</div>
+<time datetime="2026-11-03">3 novembre 2026</time>
+</div>
+<div>
+<div style="font-weight: 700; margin-bottom: 4px;">Categoria</div>
+<a href="index.html#news" style="text-decoration: underline;">Laboratori</a>
+</div>
+<div>
+<div style="font-weight: 700; margin-bottom: 8px;">Condividi</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 16px;">
+<a href="#" style="text-decoration: underline;">Facebook</a>
+<a href="#" style="text-decoration: underline;">WhatsApp</a>
+<a href="#" style="text-decoration: underline;">Email</a>
+</div>
+</div>
+</aside>
+
+<!-- Contenuto: solo elementi equivalenti ai blocchi Gutenberg di base -->
+<article style="flex: 999 1 560px; min-width: 0; max-width: 760px; font-size: 20px; line-height: 1.6;">
+<p style="margin: 0 0 24px;">Il progetto <strong>Fucina Sonora</strong> della Sfom è un laboratorio di canto corale e musica d'insieme per giovani musicisti. Per l'anno scolastico 2026/2027 è rivolto alle bambine e ai bambini che suonano già uno strumento, a qualsiasi livello.</p>
+<p style="margin: 0 0 24px;">I partecipanti esterni alla Sfom iscritti alla scuola primaria possono aderire gratuitamente con il proprio strumento e suonare in una mini-orchestra insieme agli allievi interni. Il gruppo affiancherà il Coro ritmico della Sfom e le classi aderenti.</p>
+
+<h2 style="margin: 48px 0 16px; font-size: 32px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1;">Obiettivi</h2>
+<p style="margin: 0 0 24px;">Il laboratorio favorisce l'apprendimento tra pari e una didattica inclusiva, con la pratica musicale come terreno comune per collaborazione, ascolto e rispetto reciproco.</p>
+
+<h2 style="margin: 48px 0 16px; font-size: 32px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1;">Sede e calendario</h2>
+<p style="margin: 0 0 16px;">Gli incontri si svolgono presso la Sfom di Pont-Saint-Martin, via Schigliatta 5 (La Maison du Boulodrome), dalle 18:30 alle 19:30, nelle seguenti date:</p>
+<ul style="margin: 0 0 24px; padding-left: 1.2em;">
+<li>gennaio 2027: 19, 26</li>
+<li>febbraio 2027: 2, 16, 23</li>
+<li>marzo 2027: 2, 9, 16, 23</li>
+<li>aprile 2027: 6</li>
+</ul>
+<p style="margin: 0 0 24px;">Il concerto finale si terrà il 9 aprile 2027 in occasione dell'Open Day Sfom, con orario da definire.</p>
+
+<figure style="margin: 40px 0;">
+<img src="img/n-chitarra.jpg" alt="Una ragazza alla chitarra in orchestra" style="width: 100%; height: auto; display: block;">
+<figcaption style="margin-top: 10px; font-size: 14px; line-height: 1.4; color: #4a4552;">Allievi Sfom in concerto.</figcaption>
+</figure>
+
+<h2 style="margin: 48px 0 16px; font-size: 32px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1;">Iscrizioni</h2>
+<p style="margin: 0 0 24px;">Le iscrizioni sono aperte fino al 15 dicembre 2026 tramite il <a href="https://fondazionemusicalevda.scuolasemplice.it/selling/public/BWw38NQgth" style="text-decoration: underline;">modulo online</a>.</p>
+<p style="margin: 0 0 24px;">Per informazioni: <a href="mailto:segreteria.didattica@fondazionemusicalevda.it" style="text-decoration: underline;">segreteria.didattica@fondazionemusicalevda.it</a></p>
+
+<!-- blocco Pulsante -->
+<div style="margin: 32px 0 0;">
+<a href="https://fondazionemusicalevda.scuolasemplice.it/selling/public/BWw38NQgth" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 28px; background: #16141A; color: #ffffff; font-size: 17px; font-weight: 700;">Iscriviti</a>
+</div>
+
+<!-- blocco File -->
+<div style="margin: 32px 0 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; padding: 16px 20px; background: #FFF4B8;">
+<a href="#" style="font-size: 17px; text-decoration: underline;">Allegato di esempio.pdf</a>
+<a href="#" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; background: #16141A; color: #ffffff; font-size: 15px; font-weight: 700;">Scarica</a>
+</div>
+</article>
+</div>
+</section>
+
+<!-- PRECEDENTE / SUCCESSIVO -->
+<nav aria-label="Altri articoli" style="border-top: 1px solid #16141A; border-bottom: 1px solid #16141A;">
+<div style="max-width: 1440px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+<a href="news.html" style="display: flex; flex-direction: column; gap: 8px; padding: 32px clamp(16px, 4vw, 56px); border-right: 1px solid #dddddd;">
+<span style="font-size: 14px; color: #4a4552;">← Articolo precedente</span>
+<span style="font-size: 24px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15;">Sulle orme della Bottega Sonora</span>
+</a>
+<a href="https://fondazionemusicalevda.it/news/coro-sfom-pubblicazione-gruppi-a-s-2026-2027/" style="display: flex; flex-direction: column; gap: 8px; padding: 32px clamp(16px, 4vw, 56px); text-align: right; align-items: flex-end;">
+<span style="font-size: 14px; color: #4a4552;">Articolo successivo →</span>
+<span style="font-size: 24px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15;">Coro Sfom, pubblicati i gruppi 2026/27</span>
+</a>
+</div>
+</nav>
+
+<!-- ALTRE NEWS su giallo -->
+<section style="background: #FFE14D;">
+<div style="max-width: 1440px; margin: 0 auto; padding: clamp(72px, 9vw, 128px) clamp(16px, 4vw, 56px);">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 40px;">
+<h2 style="margin: 0; font-size: clamp(44px, 6vw, 88px); font-weight: 700; letter-spacing: -0.05em; line-height: 0.9;">Altre news.</h2>
+<a href="index.html#news" style="font-size: 17px; font-weight: 700;">Tutte le news →</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0 32px; border-top: 2px solid #16141A;">
+<a href="https://fondazionemusicalevda.it/news/metodo-suzuki-orari-cml-a-s-2026-2027/" style="display: flex; flex-direction: column; gap: 12px; padding: 24px 0 32px; border-bottom: 1px solid rgba(22,20,26,0.3);">
+<span style="font-size: 14px; font-weight: 700;">Suzuki</span>
+<span style="font-size: 24px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15;">Metodo Suzuki, orari CML 2026/27</span>
+</a>
+<a href="https://fondazionemusicalevda.it/news/graduatoria-idonei-colloqui-conoscitivi-as-2026-2027/" style="display: flex; flex-direction: column; gap: 12px; padding: 24px 0 32px; border-bottom: 1px solid rgba(22,20,26,0.3);">
+<span style="font-size: 14px; font-weight: 700;">Iscrizioni</span>
+<span style="font-size: 24px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15;">Graduatoria idonei ai colloqui conoscitivi</span>
+</a>
+<a href="https://fondazionemusicalevda.it/news/calendario-scolastico-2026-2027/" style="display: flex; flex-direction: column; gap: 12px; padding: 24px 0 32px; border-bottom: 1px solid rgba(22,20,26,0.3);">
+<span style="font-size: 14px; font-weight: 700;">Scuola</span>
+<span style="font-size: 24px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15;">Calendario scolastico 2026/27</span>
+</a>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contatti" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #ffffff; background: #16141A;">
+
+<!-- parte scura -->
+<div style="max-width: 1440px; margin: 0 auto; padding: clamp(56px, 7vw, 104px) clamp(16px, 4vw, 56px) clamp(48px, 5vw, 72px);">
+
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 40px;">
+<a href="index.html" aria-label="Sfom, homepage" style="display: block; line-height: 0;"><img src="img/logo-sfom-white.svg" alt="Sfom, Scuola di Formazione e Orientamento Musicale" style="height: clamp(110px, 12vw, 180px); width: auto; display: block;"></a>
+<p style="margin: 0; max-width: 560px; font-size: clamp(32px, 3.6vw, 52px); font-weight: 700; letter-spacing: -0.045em; line-height: 0.98;">Suonare per credere<span style="color: #B79BFF;">.</span></p>
+</div>
+
+<div style="margin-top: clamp(56px, 6vw, 88px); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px 32px; border-top: 1px solid #444048; padding-top: 32px; font-size: 16px; line-height: 1.6; color: #cfcad8;">
+
+<div>
+<h2 style="margin: 0 0 12px; font-size: 14px; font-weight: 700; color: #ffffff; text-transform: uppercase; letter-spacing: 0.04em;">Sedi</h2>
+<p style="margin: 0 0 16px;"><strong style="color: #ffffff;">Aosta</strong><br>Via San Giocondo 8<br>11100 Aosta (AO)</p>
+<p style="margin: 0;"><strong style="color: #ffffff;">Pont-Saint-Martin</strong><br>Via Schigliatta 5<br>La Maison du Boulodrome</p>
+</div>
+
+<div>
+<h2 style="margin: 0 0 12px; font-size: 14px; font-weight: 700; color: #ffffff; text-transform: uppercase; letter-spacing: 0.04em;">Segreteria</h2>
+<p style="margin: 0 0 16px;"><a href="tel:+39016543995">0165 43995</a><br><a href="tel:+39016541450">0165 41450</a></p>
+<p style="margin: 0;"><a href="mailto:segreteria.didattica@fondazionemusicalevda.it" style="text-decoration: underline; word-break: break-word;">segreteria.didattica@<br>fondazionemusicalevda.it</a></p>
+</div>
+
+<nav aria-label="Link rapidi">
+<h2 style="margin: 0 0 12px; font-size: 14px; font-weight: 700; color: #ffffff; text-transform: uppercase; letter-spacing: 0.04em;">Scuola</h2>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px;">
+<li><a href="https://fondazionemusicalevda.it/iscrizioni">Nuove iscrizioni</a></li>
+<li><a href="#">Rinnovi</a></li>
+<li><a href="https://fondazionemusicalevda.it/corsi/">Corsi</a></li>
+<li><a href="https://fondazionemusicalevda.it/academy/">Academy</a></li>
+<li><a href="https://fondazionemusicalevda.it/live-eventi/">Live eventi</a></li>
+<li><a href="index.html#news">News</a></li>
+<li><a href="#">Registro elettronico</a></li>
+</ul>
+</nav>
+
+<div>
+<h2 style="margin: 0 0 12px; font-size: 14px; font-weight: 700; color: #ffffff; text-transform: uppercase; letter-spacing: 0.04em;">Seguici</h2>
+<div style="display: flex; gap: 4px; margin-left: -10px;">
+<a href="https://www.instagram.com/sfom.vda/" aria-label="Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px;">
+<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r="0.6" fill="#ffffff"></circle></svg>
+</a>
+<a href="https://www.facebook.com/sfomvda" aria-label="Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px;">
+<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M13.5 22v-8h2.5l.5-3h-3V9.3c0-.9.4-1.5 1.6-1.5h1.5V5.2c-.3 0-1.2-.2-2.3-.2-2.3 0-3.8 1.4-3.8 3.9V11H8v3h2.5v8"></path></svg>
+</a>
+<a href="mailto:segreteria.didattica@fondazionemusicalevda.it" aria-label="Email" style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px;">
+<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"></rect><path d="M3.5 6l8.5 7 8.5-7"></path></svg>
+</a>
+</div>
+<a href="https://whatsapp.com/channel/0029VaDV2hiGehEMbVnUq844" style="margin-top: 16px; display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; background: #B79BFF; color: #16141A; font-size: 15px; font-weight: 700;">Canale WhatsApp →</a>
+</div>
+</div>
+</div>
+
+<!-- fascia bianca istituzionale -->
+<div style="background: #ffffff; color: #16141A;">
+<div style="max-width: 1440px; margin: 0 auto; padding: 32px clamp(16px, 4vw, 56px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 48px;">
+<img src="img/logo-fondazione.svg" alt="Fondazione Maria Ida Viglino per la cultura musicale" style="height: 64px; width: auto; display: block;">
+<nav aria-label="Informazioni legali" style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 14px;">
+<a href="trasparenza.html">Amministrazione trasparente</a>
+<a href="https://fondazionemusicalevda.it/privacy-policy/">Privacy policy</a>
+<a href="#">Cookie policy</a>
+<a href="#">Gestisci consenso</a>
+</nav>
+</div>
+<div style="max-width: 1440px; margin: 0 auto; padding: 16px clamp(16px, 4vw, 56px) 24px; border-top: 1px solid #dddddd; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-size: 13px; color: #5f5a68;">
+<span>© 2026 Fondazione Maria Ida Viglino per la cultura musicale · P.IVA 00598260073</span>
+<span>Accordata a 440 Hz</span>
+</div>
+</div>
+</footer>
+
+</div>
+<script>
+(function(){
+  var menu=document.getElementById('menu'),o=document.getElementById('menu-open'),c=document.getElementById('menu-close');
+  if(!menu||!o)return;
+  function open(){menu.hidden=false;o.setAttribute('aria-expanded','true');document.body.classList.add('menu-open');if(c)c.focus();}
+  function close(){menu.hidden=true;o.setAttribute('aria-expanded','false');document.body.classList.remove('menu-open');o.focus();}
+  o.addEventListener('click',open);
+  if(c)c.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!menu.hidden)close();});
+  menu.addEventListener('click',function(e){if(e.target.closest('a')){menu.hidden=true;o.setAttribute('aria-expanded','false');document.body.classList.remove('menu-open');}});
+})();
+</script>
+</body>
+</html>
